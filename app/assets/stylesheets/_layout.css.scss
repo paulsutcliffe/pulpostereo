@@ -1,0 +1,28 @@
+
+.region {@extend .row}
+.region-inner {
+  @extend .col-lg-10;
+  @extend .col-md-10;
+  @extend .col-sm-12;
+  @extend .col-xs-12;
+
+  
+  @extend .col-lg-offset-1;
+}
+
+
+.sidebar {
+  @extend .col-lg-6;
+  @extend .col-md-6;
+  @extend .col-sm-6;
+  @extend .col-xs-12;
+}
+
+
+
+@media (max-width: 640px) {
+}
+
+
+
+

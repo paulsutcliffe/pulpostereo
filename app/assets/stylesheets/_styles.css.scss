@@ -1,0 +1,59 @@
+
+
+#main-header {background: $yellow; height: 75px; margin-bottom: 60px;
+  .region-inner {margin-top: 35px}
+
+}
+
+
+@import "icons/*.png";    /* */
+@include all-icons-sprites;
+
+.main-sidebar {text-align: right}
+.icons-padding-big {padding-left: 80px; }
+@mixin icon-before {content: ""; width: 50px; height: 45px; display: block; position: absolute; top: 0; left: 0}
+
+ul {
+  @include no-bullet;
+
+  &.what-do-we-do {
+    padding: 0; margin-top: 50px;
+    font-size: $dosis-heading;
+    li {@extend .icons-padding-big; line-height: 100%; margin-bottom: 20px; padding-bottom: 5px; position: relative;
+      &:before {@include icon-before;}
+      
+    }
+  }
+}
+
+.what-do-we-do {
+  
+  li.produccion:before {@include icons-sprite(playlist)}
+  li.estudio:before {@include icons-sprite(mike); width: 22px; height: 40px; left: 7px}
+  li.post-produccion:before {@include icons-sprite(speaker); height: 40px; left: 5px}
+  li.mezcla:before {@include icons-sprite(settings); left: 3px}
+  li.musicalizacion:before {@include icons-sprite(tv)}
+}
+
+.our-main-clients {@extend .icons-padding-big; font-weight: 400; position: relative;
+  &:before {@include icon-before; @include icons-sprite(users) }
+}
+.icons-email {padding-left: 50px; height: 25px; display: block; line-height: 100%}
+
+.secondary-sidebar {
+  #inicio & {
+    p {
+      @extend .icons-padding-big;
+    }
+  }
+}
+
+.lead-title,
+.lead-message {
+  @extend .lead;
+  font-size: $dosis-large; font-weight: 400;
+}
+
+
+
+
