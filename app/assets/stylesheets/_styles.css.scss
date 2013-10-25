@@ -21,13 +21,13 @@ ul {
     font-size: $dosis-heading;
     li {@extend .icons-padding-big; line-height: 100%; margin-bottom: 20px; padding-bottom: 5px; position: relative;
       &:before {@include icon-before;}
-      
+
     }
   }
 }
 
 .what-do-we-do {
-  
+
   li.produccion:before {@include icons-sprite(playlist)}
   li.estudio:before {@include icons-sprite(mike); width: 22px; height: 40px; left: 7px}
   li.post-produccion:before {@include icons-sprite(speaker); height: 40px; left: 5px}
@@ -56,4 +56,5 @@ ul {
 
 
 
-
+.kosmyka {float: right;}
+.copyright {font-size: $dosis-small; float: left;}

@@ -8,7 +8,7 @@
     .container
       .region
         .region-inner
-          = mail_to 'info@pulpostereo.pe', 'info@pulpostereo.pe', class: 'icons-email' 
+          = mail_to 'info@pulpostereo.pe', 'info@pulpostereo.pe', class: 'icons-email'
 
   %section#content.container
     .region
@@ -20,6 +20,8 @@
           = yield
 
   %footer#main-footer
+    %p.copyright &copy; Pulpo Stereo Todos los derechos Reservados.
+    %p.kosmyka= link_to image_tag('/assets/logo-kosmyka-footer.png'), 'http://www.kosmyka.com', :target => '_blank'
 
   = javascript_include_tag 'application'
 
