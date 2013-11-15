@@ -33,6 +33,7 @@ gem "capistrano"
 # To use debugger
 # gem 'debugger'
 
+gem 'unicorn-worker-killer'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 gem "rvm-capistrano"
